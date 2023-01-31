@@ -2,4 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .main-container {
+        @apply shadow bg-zinc-500/80 border-zinc-500 shadow-zinc-600 border rounded text-lime-300 p-4 w-fit m-12;
+    }
 
+    .form-element {
+        @apply py-1
+    }
+
+    .input-element {
+        @apply text-slate-700 border-2 rounded border-lime-500
+    }
+}
