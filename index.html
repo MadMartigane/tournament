@@ -2,41 +2,60 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Toolnament</title>
         <link href="src/style.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.css" rel="stylesheet" />
+        <link href="src/jarallax/index.css" rel="stylesheet">
     </head>
     <body class="bg-gray-600">
 
-        <div class="jarallax" data-jarallax>
-            <img class="jarallax-img" src="img/bg_Lasergame-4.webp" alt="Lazer game room #1" />
-            <div>
+        <!-- Background Image Parallax -->
+        <div class="jarallax">
+            <img class="jarallax-img" src="img/bg_football_stadium22.jpg" alt="Stade arena" />
+            <div class="h-screen">
                 <div class="flex justify-center">
-                    <div class="shadow bg-gray-500/80 border-gray-500 shadow-gray-600 border rounded text-lime-300 p-4 w-fit m-12">
-                        <h1 class="text-9xl text-center">Marius</h1>
-                        <h1 class="text-9xl text-center">🎂</h1>
-                        <h2 class="text-9xl text-center">Anniversaire</h2>
-                        <h2 class="text-9xl text-center">2022</h2>
+                    <div class="main-container">
+                        <form action="" method="" class="form-main">
+
+                            <div class="form-element">
+                                <label for="teamNumber">Nombre d'équipe: </label>
+                                <input
+                                    class="input-element"
+                                    min="0"
+                                    max="32"
+                                    type="number"
+                                    value="32"
+                                    step="2"
+                                    name="teamNumber"
+                                    id="form-team-number"
+                                required>
+                            </div>
+
+                            <div class="flex justify-center">
+                                <button class="btn-primary">Génération !</button>
+                                <button class="btn-secondary">Génération 2 !</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="main-container">
+                        <div id="form-team-container"></div>
                     </div>
                 </div>
 
-                <div class="flex justify-center">
-                    <div class="text-5xl shadow bg-gray-500/80 border-gray-500 shadow-gray-600 border rounded text-lime-300 p-4 w-4/5 lg:w-1/2 m-12">
-                        <h3 class="text-9xl">Ou ?</h3>
-                        <a href="https://dunkerque.lasergame-evolution.fr/" target="_blank">
-                            <img src="img/fg_lazer_game_evo1.webp" alt="Lazer game Évolution" />
-                            <p class="text-sky-300">☞ Lazer game Évolution - Dunkerque</p>
-                        </a>
-                        <p class="text-sky-300 pt-2 pb-2">
-                        <a href="https://goo.gl/maps/DpGCBxi4hW2pURn97" target="_blank">☞ 221 Quai aux Fleurs, 59240 Dunkerque</a>
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
 
+        <!-- TEMPLATES -->
+        <div style="display:none">
+
+            <div id="template-input-team-name" class="form-element">
+                <label for="teamName">Nom de l'équipe: </label>
+                <input class="input-element" type="text" placeholder="Nom de l'équipe" name="teamName" id="form-team-name" required>
+            </div>
+        </div>
 
         <script type="module" src="/src/main.ts"></script>
     </body>
