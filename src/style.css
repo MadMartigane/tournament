@@ -4,7 +4,11 @@
 
 @layer components {
     .main-container {
-        @apply shadow bg-zinc-500/80 border-zinc-500 shadow-zinc-600 border rounded text-lime-300 p-4 m-12 flex-1;
+        @apply justify-center grid sm:grid-cols-1 lg:grid-cols-2
+    }
+
+    .block-container {
+        @apply shadow bg-zinc-500/80 border-zinc-500 shadow-zinc-600 border rounded text-lime-300 p-4 m-12;
     }
 
     .form-element {
