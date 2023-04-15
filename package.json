@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "vite build",
+    "build-safe": "tsc && vite build",
+    "preview": "vite preview",
+    "prod": "cp -r dist/* /var/www/marius.click/html/toolnament/"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
