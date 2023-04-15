@@ -4,7 +4,7 @@
 
 @layer components {
     .main-container {
-        @apply shadow bg-zinc-500/80 border-zinc-500 shadow-zinc-600 border rounded text-lime-300 p-4 w-fit m-12;
+        @apply shadow bg-zinc-500/80 border-zinc-500 shadow-zinc-600 border rounded text-lime-300 p-4 m-12 flex-1;
     }
 
     .form-element {
@@ -12,6 +12,19 @@
     }
 
     .input-element {
-        @apply text-slate-700 border-2 rounded border-lime-500
+        @apply text-slate-700 border-2 rounded border-lime-500 mx-1 my-1
     }
+
+    .btn {
+        @apply rounded-full rounded-xl hover:rounded-lg px-4 py-2 shadow-md hover:shadow-lg mx-2 my-4
+    }
+
+    .btn-primary {
+        @apply btn bg-teal-900 shadow-teal-900/50
+    }
+
+    .btn-secondary {
+        @apply btn bg-cyan-900 shadow-cyan-900/50
+    }
+
 }
