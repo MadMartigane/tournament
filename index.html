@@ -6,13 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Toolnament</title>
         <link href="src/style.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.css" rel="stylesheet" />
+        <link href="src/jarallax/index.css" rel="stylesheet">
     </head>
     <body class="bg-gray-600">
 
-        <div class="jarallax" data-jarallax>
+        <!-- Background Image Parallax -->
+        <div class="jarallax">
             <img class="jarallax-img" src="img/bg_football_stadium22.jpg" alt="Stade arena" />
-            <div>
+            <div class=""> <!-- empty class is important for jarallax -->
                 <div class="flex justify-center">
                     <div class="main-container">
                         <form action="" method="" class="form-main">
@@ -56,8 +57,8 @@
         <div style="display:none">
 
             <div id="template-input-team-name" class="form-element">
-                <label for="teamNumber">Nombre d'équipe: </label>
-                <input class="input-element" type="text" placeholder="Nom d'équipe" name="teamName" id="form-team-number" required>
+                <label for="teamName">Nom de l'équipe: </label>
+                <input class="input-element" type="text" placeholder="Nom de l'équipe" name="teamName" id="form-team-name" required>
             </div>
         </div>
 
